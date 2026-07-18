@@ -8,9 +8,16 @@ import pystray
 import winsound
 
 
+
+from app.gui import App
+from app.notes import Path
+
+
+
 def main():
     print("Starting...")
-
+    app = App()
+    app.mainloop()
 
 
 
