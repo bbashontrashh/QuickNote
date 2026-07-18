@@ -1,6 +1,8 @@
 import os
-
-def hola_mundo():
-    print("Hola Mundo")
-
-hola_mundo()
+import customtkinter as ctk
+import keyboard
+import pathlib
+from pathlib import Path
+import datetime
+import pystray
+import winsound
