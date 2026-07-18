@@ -21,7 +21,8 @@ class App(ctk.CTk):
         
 
 
-    #METHODS
+        #METHODS
+        self.iconbitmap("assets/icon.ico")
         
 
 
