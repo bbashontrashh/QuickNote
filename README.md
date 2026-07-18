@@ -105,9 +105,9 @@ python src/main.py
 ## 🗺️ Roadmap
 
 - [x] Project setup
-- [ ] Main interface
+- [x] Main interface
 - [ ] Global shortcut
-- [ ] Auto-save
+- [x] Auto-save
 - [ ] Search notes
 - [ ] Dark mode
 - [ ] System tray support
