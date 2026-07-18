@@ -7,11 +7,8 @@ import datetime
 import pystray
 import winsound
 
-
-
 from app.gui import App
-from app.notes import Path
-
+from app.notes import NotesManager
 
 
 def main():
@@ -20,14 +17,5 @@ def main():
     app.mainloop()
 
 
-
-
-
-
-
-
-
-
 if __name__ == "__main__":
     main()
-

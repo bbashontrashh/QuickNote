@@ -1,5 +1,7 @@
 import customtkinter as ctk
 
+from app.notes import NotesManager
+
 
 class App(ctk.CTk):
     def __init__(self):
@@ -13,15 +15,15 @@ class App(ctk.CTk):
         self.iconbitmap("assets/icon.ico")
 
         # Configuración del grid
-        self.grid_rowconfigure(0, weight=1)  # El textbox se expande
-        self.grid_rowconfigure(1, weight=0)  # El botón no
+        self.grid_rowconfigure(0, weight=1)
+        self.grid_rowconfigure(1, weight=0)
         self.grid_columnconfigure(0, weight=1)
 
         # Textbox
         self.textbox = ctk.CTkTextbox(
             self,
             corner_radius=0,
-            font=("Consolas", 22, "bold"),
+            font=("Comic", 22, "bold"),
             text_color="white"
         )
         self.textbox.grid(row=0, column=0, sticky="nsew")
@@ -35,9 +37,11 @@ class App(ctk.CTk):
         self.button.grid(row=1, column=0, pady=10)
 
     def button_event(self):
-        texto = self.textbox.get("1.0", "end")
-        print(texto)
+        nota_texto = self.textbox.get("1.0", "end").strip()
 
+        if nota_texto:
+            NotesManager.guardar_nota(nota_texto)
+            self.textbox.delete("1.0", "end")
 
 
 if __name__ == "__main__":
