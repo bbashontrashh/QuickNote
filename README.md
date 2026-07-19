@@ -47,30 +47,6 @@ Just write and keep working.
 
 ---
 
-## 📁 Project Structure
-
-```text
-QuickNote/
-│
-├── assets/
-│   ├── icons/
-│   └── images/
-│
-├── notes/
-│
-├── src/
-│   ├── ui/
-│   ├── core/
-│   ├── utils/
-│   └── main.py
-│
-├── .gitignore
-├── README.md
-└── requirements.txt
-```
-
----
-
 ## ⚙️ Installation
 
 ```bash
@@ -111,8 +87,6 @@ python src/main.py
 - [ ] Search notes
 - [ ] Dark mode
 - [ ] System tray support
-- [ ] Export notes
-- [ ] Markdown support
 
 ---
 
@@ -124,16 +98,8 @@ Feel free to open an issue or submit a pull request.
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License.
-
----
-
 <div align="center">
 
 ### Made with ❤️ and Python
-
-*"Fast thoughts deserve fast notes."*
 
 </div>
